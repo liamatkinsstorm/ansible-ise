@@ -83,11 +83,11 @@ There are three ways to use it:
 ### Using environment variables
 First, export the environment variables where you specify your Cisco ISE credentials as ansible variables:
 ```
-export ISE_HOSTNAME=<A.B.C.D>
-export ISE_USERNAME=<username>
-export ISE_PASSWORD=<password>
+export ISE_HOSTNAME=10.1.70.3
+export ISE_USERNAME=admin
+export ISE_PASSWORD=Tw1st3r1
 export ISE_VERIFY=False # optional, defaults to True
-export ISE_VERSION=3.1_Patch_1 # optional, defaults to 3.1_Patch_1
+export ISE_VERSION=3.3_Patch_0 # optional, defaults to 3.1_Patch_1
 export ISE_WAIT_ON_RATE_LIMIT=True # optional, defaults to True
 export ISE_USES_API_GATEWAY=True # optional, defaults to True
 export ISE_DEBUG=False # optional, defaults to False

@@ -1,8 +1,8 @@
 [ise_servers]
-ise_server
+group_vars/ise_server
 
-[ise]
-localhost ansible_python_interpreter=/Users/rcampos/.pyenv/shims/python
+#[ise]
+#localhost ansible_python_interpreter=/Users/rcampos/.pyenv/shims/python
 
-[ise:vars]
-cloud_provider = aws
+#[ise:vars]
+#cloud_provider = aws

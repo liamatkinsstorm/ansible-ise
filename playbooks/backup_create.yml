@@ -11,7 +11,7 @@
         ise_verify: "{{ ise_verify }}"
         state: present
         name: myRepo
-        password: MyP@ssworD
+        password: Tw1st3r1
         path: /
         protocol: DISK
 
@@ -21,7 +21,7 @@
         ise_username: "{{ ise_username }}"
         ise_password: "{{ ise_password }}"
         ise_verify: "{{ ise_verify }}"
-        backupEncryptionKey: My3ncryptionkey
+        backupEncryptionKey: Tw1st3r1
         backupName: myBackup
         repositoryName: myRepo
       register: result

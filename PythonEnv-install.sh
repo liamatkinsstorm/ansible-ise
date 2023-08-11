@@ -9,6 +9,6 @@
 python3 -m venv /home/liam/Documents/venv # Creates a directory named 'venv' in the current directory, which contains pip, interpreter, scripts, and libraries.
 source /home/liam/Documents/venv/bin/activate
 
-pip install -r /home/liam/GitRepo/ansible-ise-1/requirements.txt  # install required Python packages
+pip install -r /home/liam/Documents/gitrepo/ansible-ise/requirements.txt  # install required Python packages
 
 #deactivate

@@ -1,0 +1,25 @@
+- hosts: ise_servers
+  gather_facts: no
+  tasks:
+  - name: Get network device by id
+    cisco.ise.network_device_info:
+      ise_hostname: "{{ise_hostname}}"
+      ise_username: "{{ise_username}}"
+      ise_password: "{{ise_password}}"
+      ise_verify: "{{ise_verify}}"
+      ise_debug: "{{ise_debug}}"
+      ise_uses_api_gateway: "{{ise_uses_api_gateway}}"
+      ise_uses_csrf_token: "{{ise_uses_csrf_token}}"
+ 
+  - name: Get all Deployment
+    cisco.ise.deployment_info:
+        ise_hostname: "{{ ise_hostname }}"
+        ise_username: "{{ ise_username }}"
+        ise_password: "{{ ise_password }}"
+        ise_verify: "{{ ise_verify }}"
+        timeout: 300
+    register: result
+
+  - name: Print deployment info
+    ansible.builtin.debug:
+        var: result
